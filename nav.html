@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <style>
+        *{
+            background-color: rgb(233, 226, 219);
+        }
+        ul{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            margin: 0;
+            padding: 0%;
+            width: 200px;
+
+
+        }
+        ul li{
+            list-style: none;
+            border-top: 1px solid gray;
+            border-radius: 1px solid pink;
+            margin: -1px 0;
+            transition: 0.9s;
+        }
+        ul li:hover
+        {
+            transform: translateX(25px);
+
+        }
+        ul li a{
+            display: block;
+            border-right: 1px solid green;
+            text-decoration: none;
+            color:peru;
+        }
+        ul li a span{
+            position: relative;
+            display: inline-block;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+ <ul>
+    <li>
+        <a href="#">
+            <span><i class="fas fa-home"></i></span>
+            <span>Home</span>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <span><i class="fa-duotone fa-house-user"></i></span>
+            <span>profil</span>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <span><i class="fa-brands fa-facebook"></i></span>
+            <span>Blog</span>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <span><i class="fas fa-heart"></i></span>
+            <span>Likes</span>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <span><i class="fas fa-envelope"></i></span>
+            <span>Message</span>
+        </a>
+    </li>
+ </ul>   
+</body>
+</html>

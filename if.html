@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            border: none;
+            border-radius: 30px;
+            background-image: url("https://c.ndtvimg.com/2022-03/opf26brs_yamigautamtaj650_625x300_31_March_22.jpg?im=Resize=(1230,900");
+        }
+        
+    </style>
+</head>
+<body>
+   
+    <button onclick="add()">DECREMENT</button>
+    <span id="spn">0</span>
+    <button onclick="add1()">INCREMENT</button>
+
+    <button type="reset" onclick="reset()">reset</button>
+
+
+
+
+    <script>
+        let sp=document.getElementById("spn");
+        function add()
+        {
+         let spn1=sp.textContent;
+         let b=parseInt(spn1)-1;
+         if(b<0)
+         {
+            
+         sp.style.color="red";
+         }
+         sp.textContent=b;
+
+        }
+
+        function add1()
+        {
+         let spn1=sp.textContent;
+         let b=parseInt(spn1)+1;
+         if(b<0)
+         {
+            sp.style.color="green";
+         }
+         sp.textContent=b;
+
+        }
+        function reset()
+        {
+            sp.textContent=0;
+            sp.style.color="blue";
+        }
+    </script>
+</body>
+</html>

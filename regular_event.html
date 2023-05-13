@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="txt">
+    <input type="text" id="txt1">
+    <button onclick="add1()">submit</button>
+ <script>
+        // var a="The Taj Mahal is considered to be the greatest architectural achievement in the whole range of Indo-Islamic architecture. Its recognised architectonic beauty has a rhythmic combination of solids and voids, concave and convex and light shadow; such as arches and domes further increases the aesthetic aspect.";
+        // var b=/t/ig;
+        // document.write(a.match(b));
+//class classname{
+//variable declarations
+//method declaration
+//}
+function add1(){
+class A{
+    
+     constructor(name,id){
+      
+        this.name=name;
+        this.id=id;
+    }
+     add(){
+        return this.name+this.id;
+     }
+
+}
+var  a=document.getElementById("txt").value;
+var b=document.getElementById("txt").value;
+// document.write(a);
+var ab=new A();//object 
+document.write(ab.add(a,b));
+}
+    </script>
+</body>
+</html>

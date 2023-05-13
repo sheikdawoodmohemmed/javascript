@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+ 
+ 
+ <style>
+    
+   .container{
+    width:100%;
+    height:100px;
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+     margin-top: 350px;
+}
+.calculator{
+    background-color: rgb(43, 40, 40);
+    padding:20px;
+    border-radius: 10px;
+
+}
+.calculator form input{
+    border:0;
+    outline: 0;
+    width:60px;
+    height:60px;
+    border-radius: 10px;
+    box-shadow: -8px -5px 15px rgba(255,255,255,0.1) ,5px 5px 15px rgba(0,0,0,0.2);
+    background:transparent;
+    font-size:20px;
+    cursor:poiner;
+    margin:10px;
+    color:blanchedalmond;
+   
+}
+form .display{
+    display:flex;
+    justify-content: flex-end;
+margin:20px 0;
+}
+form .display input{
+    text-align:right;
+    flex:1;
+    font-size:45px;
+    box-shadow: none;
+}
+form input.equal{
+    width:145px;
+}
+form input.oprator{
+    color:aqua;
+}
+
+  </style>
+  <body>
+      
+   <div class="container">
+    <div class="calculator">
+        <form>
+            <div class="display">
+                <input type="text" name="display">
+            </div>
+            <div>
+                <input type="button" value="AC"  onclick="display.value =' '"  class="oprator">
+                <input type="button" value="DE" onclick="display.value= display.value.toString().slice(0,-1)" class="oprator">
+                <input type="button" value="."  onclick="display.value +='.'"  class="oprator">
+                <input type="button" value="/"  onclick="display.value +='/'" class="oprator">
+            </div>
+            <div>
+                <input type="button" value="7" onclick="display.value +=' 7'">
+                <input type="button" value="8"onclick="display.value +=' 8'">
+                <input type="button" value="9"onclick="display.value +=' 9'">
+                <input type="button" value="*" onclick="display.value +=' *'" class="oprator">
+            </div>
+            <div>
+                <input type="button" value="4" onclick="display.value +='4'">
+                <input type="button" value="5" onclick="display.value +='5'">
+                <input type="button" value="6"  onclick="display.value +='6'">
+                <input type="button" value="-" onclick="display.value +='-'" class="oprator">
+            </div>
+            <div>
+                <input type="button" value="1" onclick="display.value +='1'">
+                <input type="button" value="2" onclick="display.value +='2'">
+                <input type="button" value="3" onclick="display.value +='3'">
+                <input type="button" value="+" onclick="display.value +='+'"  class="oprator">
+            </div>
+            <div>
+                <input type="button" value="00" onclick="display.value +='00'">
+                <input type="button" value="0"onclick="display.value +='0'">
+                <input type="button" value="=" class="equal" onclick="display.value= eval(display.value)">
+              
+            </div>
+        </form>
+    </div>
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

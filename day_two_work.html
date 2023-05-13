@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <h1 class="text-success"> STUDENT REGISTER FORM</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <label for=""> Enter student name</label>
+          <input type="text" id="stuname"  placeholder="Enter the name"> 
+        </div>
+
+        <div class="col-sm-5">
+          <label for=""> uploade image</label>
+          <input type="file" id="image" placeholder=""> 
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="row mt-3">
+        <div class="col-sm-3">
+          <label for=""> Date of Birth</label>
+          <input type="date" id="dob" class="dob" placeholder="Enter the name"> 
+        </div>
+
+        <div class="col-sm-3">
+          <label for=""> Age</label>
+          <input type="number" id="age" class="age" placeholder="Enter the name"> 
+        </div>
+
+        <div class="col-sm-3">
+          <label for="">Gender</label>
+          <input type="radio" id="gndr" name="gndr">male 
+          <input type="radio" id="gndr" names="gndr">female
+        </div>
+
+        <div class="col-sm-3">
+          <label for="">Blood group </label>
+          <input type="number" id="blood" class="blood" placeholder="Enter the name"> 
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="container">
+      <div class="row mt-3">
+        <div class="col-sm-4">
+          <label for=""> Father name</label>
+          <input type="text" id="fthr" class="fthr" placeholder="Enter the name"> 
+        </div>
+
+        <div class="col-sm-4">
+          <label for=""> Mother name</label>
+          <input type="text" id="mthr" class="mthr" placeholder="Enter the name"> 
+        </div>
+
+        
+      </div>
+    </div>
+
+
+
+    <div class="container">
+      <div class="row mt-3">
+        <div class="col-sm-4">
+          <label for=""> Qualification</label>
+          <input type="text" id="qli" class="qli" placeholder="Enter the name"> 
+        </div>
+
+        <div class="col-sm-4">
+          <label for=""> Persentage%</label>
+          <input type="number" id="per" class="per" placeholder="Enter the name"> 
+        </div>
+
+        
+      </div>
+    </div>
+
+
+
+    <div class="container">
+      <div class="row mt-3">
+        <div class="col-sm-2">
+          <label for="">Address</label>
+          <input type="text" id="add" class="add" placeholder="Enter the name"> 
+        </div>
+
+        <div class="col-sm-2">
+          <label for=""> state</label>
+          <input type="text" id="state" class="state" placeholder="Enter the name"> 
+        </div>
+
+        <div class="col-sm-2">
+          <label for=""> city</label>
+          <input type="text" id="city" class="city" placeholder="Enter the name"> 
+        </div>
+
+        <div class="col-sm-2">
+          <label for=""> state</label>
+          <input type="number" id="state" class="state" placeholder="Enter the name"> 
+        </div>
+
+        <div class="col-sm-2">
+          <label for=""> Pincode</label>
+          <input type="number" id="pin" class="pin" placeholder="Enter the name"> 
+        </div>
+
+        
+      </div>
+    </div>
+
+
+
+
+    <div class="container">
+      <div class="row mt-3">
+        <div class="col-sm-4">
+          <label for=""> Email</label>
+          <input type="email" id="email" class="email" placeholder="Enter the name"> 
+        </div>
+
+        <div class="col-sm-4">
+          <label for="">phone no</label>
+          <input type="number" id="phne" class="phne" placeholder="Enter the name"> 
+        </div>
+
+        
+      </div>
+    </div>
+
+
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-sm-4">
+      <button type="button" class="bg-primary" onclick="sample()">Submit</button>
+    </div>
+
+    <div class="col-sm-6">
+      <button type="button" class="bg-warning">Reset</button>
+
+</div>
+</div>
+</div>
+<h1>OUTPUT</h1>
+<div>
+
+<table border="5px" id="tbl"></table>
+
+</div>
+
+
+
+
+
+
+    <script src="day_two_work.js"></script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

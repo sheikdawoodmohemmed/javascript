@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <style>
+        h1{
+            border: 2px;
+        }
+        #divid{
+            margin-left: 100px;
+            font-size: 200px;
+        }
+        .btn{
+            background-image: linear-gradient(rgb(243, 144, 14), rgb(255, 0, 0),rgb(69, 238, 78));
+            border: none;
+            border-radius: 20px;
+        }
+    </style> 
+<form>
+    <label for="">ENTER YOUR NAME</label>
+    <input type="text" id="inc" placeholder="ENTER YOUR VALUE">
+    <input type="button" value="CLICK TO MAGIC"     onclick="btnn()" >
+    <span id="output"></span>
+</form>     
+
+<form action="">
+    <label for="">enter your age</label>
+    <input type="text" id="demo" value="" placeholder="AGE" /><br><br><br>
+    <button type="button" class="btn" onclick="add()">submit</button>
+     <div id="divid"></div>
+
+</form>
+
+
+    <script> 
+      
+      function add(){
+        var a=document.getElementById("demo");
+        var b=a.value;
+        if(b>=18){
+            
+            var c=document.getElementById("divid");
+            c.innerHTML=("this is wright");
+            c.style.color="green";
+            
+
+            d=a.style.outline="none";
+            f=a.style.border="2px solid green";
+         
+
+        }else{
+            var c=document.getElementById("divid");
+            c.innerHTML=("wrong password");
+            c.style.color="red";
+            d=a.style.outline="none";
+            f=a.style.border="2px solid red";
+        }
+      } 
+
+        
+      
+            
+     function btnn(){
+          
+            var a=document.getElementById("inc").value;
+
+            var b,c=0;
+            while(a!=0){
+
+                b=a%10;
+                c=(c*10)+b;
+                a=parseInt(a/10);
+
+            }
+            var d=document.getElementById("output");
+        
+            d.innerHTML=c;
+            d.style.color="orange";
+        
+        }
+
+        
+       </script>
+        
+</head>
+
+<body>
+    <form action="">
+        <label for="">INCRSE YOUR VALUE</label>
+        <input type="text" id="inc" value="" placeholder="VALUE">
+        <input type="button" name="btn"  onclick="btnn()" value="CLICK TO MAGIC">
+        <div id="output"></div> 
+
+    </form>
+
+    
+</body>
+</html>

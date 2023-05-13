@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paragraph tag</title>
+</head>
+<body>
+    <p  onmouseover="mouseOver(this)" onmouseout="mouseout(this)" id="text"  >JavaScript and Java are completely different languages, both in concept and design.
+
+        JavaScript was invented by Brendan Eich in 1995, and became an ECMA standard in 1997.
+        
+        ECMA-262 is the official name of the standard. ECMAScript is the official name of the language.
+        
+        </p>
+    <input type="button" value="submit">
+    
+</body>
+
+<script>
+   function mouseOver(element)
+        {
+            element.style.color="blue";
+        }
+        function mouseout(element)
+        {
+           element.style.color="red";
+        }
+</script>
+</html>

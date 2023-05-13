@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" id="user" name="user" value="" placeholder="Enter a Name"/> 
+
+    <input type="text" id="age"  name="age"  value="" placeholder="Enter a Age" />
+
+    <input type="button" value="ADD" onclick="add_item()"/><br><br>
+
+    <table border="1px">
+        <thead>
+            <tr>
+                <th>S.NO</th>
+                <th>NAME</th>
+                <th>AGE</th>
+            </tr>
+        </thead>
+        <tbody id="tbodyid">
+            
+
+        </tbody>
+   </table>
+   
+    <script>
+        var arr=[];
+
+function add_item()
+{
+    var name=document.getElementById("user").value;
+    var age=document.getElementById("age").value;
+    arr.push({name:name,age:age});
+    document.getElementById("user").value="";
+    document.getElementById("age").value="";
+    
+    show_items();
+    
+}
+
+
+
+function show_items()
+{
+    var s="";
+    var i=0;
+    arr.forEach(function(value,index)
+   { 
+    i+=1;
+    s+="<tr><td>"+i+"</td>"+"<td>"+value.name+"</td>"+"<td>"+value.age +"</td></tr>";
+   })
+
+   document.getElementById("tbodyid").innerHTML=s;
+}
+    </script>
+</body>
+</html>
